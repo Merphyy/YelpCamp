@@ -1,0 +1,19 @@
+{
+  "name": "yelpcamp",
+  "version": "1.0.0",
+  "description": "YelpCamp Application",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Merphyy/YelpCamp.git"
+  },
+  "author": "Merphous Lau",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Merphyy/YelpCamp/issues"
+  },
+  "homepage": "https://github.com/Merphyy/YelpCamp#readme"
+}
