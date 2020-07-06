@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Merphyy/YelpCamp/issues"
   },
-  "homepage": "https://github.com/Merphyy/YelpCamp#readme"
+  "homepage": "https://github.com/Merphyy/YelpCamp#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
