@@ -4,28 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="/stylesheets/main.css">
     <title>YelpCamp</title>
 </head>
 <body>
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="navbar-header"></div>
-            <a class="navbar-brand" href="/">YelpCamp</a>
+            <a class="navbar-brand" href="/campgrounds">YelpCamp</a>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="/">Login</a>
-                    </li>
-                    <li>
-                        <a href="/">Register</a>
-                    </li>
-                    <li>
-                        <a href="/">Log Out</a>
-                    </li>
+                    <%if(!currentUser){%>
+                        <li><a href="/login">Login</a></li>
+                        <li><a href="/register">Register</a></li>
+                    <%}else{%>
+                        <li><a href="#">Signed in as <%= currentUser.username%></a></li>
+                        <li><a href="/logout">Log Out</a></li>
+                    <%}%> 
                 </ul>
             </div>
-        
         </div>
     </nav>
     

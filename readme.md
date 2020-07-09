@@ -55,3 +55,32 @@ display comments on campground show page
 discuss nested routes
 add the comment new and create routes
 add the new comment form
+
+12.style show page
+add side bar to show page
+display comments nicely
+
+13.finish styling show page
+add public directory
+add custom stylesheet
+
+14.add user model
+install all packages needed for auth
+define User model
+
+15.register
+configure passport
+add register routes
+add register template
+
+16.login
+add login routes
+add login templates
+
+17.logout/navbar
+add logout route
+prevent user from adding a comment if not signed in
+add links to navbar
+
+18.show/hide links
+show/hide auth links in side bar correctly
