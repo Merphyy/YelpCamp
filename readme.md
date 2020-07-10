@@ -84,3 +84,23 @@ add links to navbar
 
 18.show/hide links
 show/hide auth links in side bar correctly
+
+19.refacor the routes
+use express Routes to reorganize all routes
+
+20.users + comments
+associate users and comments
+save author's name to a comment automatically
+
+21.users + campgrounds
+prevent an unauthenticated user from creating a campground
+save username + id to newlu created campgound
+
+22.deleting campgrounds
+add destroy route
+add delete button
+
+23.authorization
+user can only edit his/her campgrounds
+user can only delete his/her campgrounds
+hide/show edit and delete button
