@@ -96,11 +96,42 @@ save author's name to a comment automatically
 prevent an unauthenticated user from creating a campground
 save username + id to newlu created campgound
 
-22.deleting campgrounds
+22.editing campgrounds
+add method-override
+add edit route for campgrounds
+add link to edit page
+add update route
+fix & set problem
+
+
+23.deleting campgrounds
 add destroy route
 add delete button
 
-23.authorization
+24.authorization
 user can only edit his/her campgrounds
 user can only delete his/her campgrounds
 hide/show edit and delete button
+
+25.editing comments
+add edit route for comments
+add edit button
+add update route
+
+26.deleting comments
+add destroy route
+add delete btn
+
+27.authorization comments
+user can only edit his/her comments
+user can only delete his/her comments
+hide/show edit and delete buttons
+refactor middleware
+
+28.adding in Flash
+demo working version
+install and configure connect-flash
+add bootstrap alerts to header
+
+
+

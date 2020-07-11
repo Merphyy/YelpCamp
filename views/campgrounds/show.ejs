@@ -13,13 +13,19 @@
             <div class="thumbnail">
                 <img class="img-responsive" src="<%= campground.image%>" >
                 <div class="caption-full">
-                    <h4 class="pull-right">$9/night</h4>
+                    <h4 class="pull-right"><%= campground.price%>$/night</h4>
                     <h4><a href=""><%= campground.name%></a></h4>
                     <p><%= campground.description%></p>
                     <p>
                         <em>Submmited By</em>
                         <%= campground.author.username%>
                     </p>
+                    <%if(currentUser && campground.author.id.equals(currentUser._id)){%>
+                        <a class="btn btn-warning" href="/campgrounds/<%= campground._id%>/edit">Edit</a>
+                        <form id="delete-form" action="/campgrounds/<%= campground._id%>?_method=Delete" method="POST">
+                            <button class="btn btn-danger">Delete</button>
+                        </form>
+                    <%}%>
                 </div>
             </div>
             <div class="well">
@@ -35,6 +41,12 @@
                             <p> 
                                 <%= comment.text%>
                            </p>
+                           <%if(currentUser && comment.author.id.equals(currentUser._id)){%>
+                           <a class="btn btn-warning" href="/campgrounds/<%= campground._id%>/comments/<%= comment._id%>/edit">Edit</a>
+                           <form class="delete-form" action="/campgrounds/<%= campground._id%>/comments/<%= comment._id%>?_method=Delete" method="POST">
+                            <button class="btn btn-danger">Delete</button>
+                            </form>
+                            <%}%>
                         </div>
                     </div>
                     
